@@ -5,3 +5,5 @@ target_include_directories(example_fuzz PUBLIC
                            )
 
 target_link_libraries(example_fuzz PUBLIC ${libportaudio})
+
+install(TARGETS example_fuzz DESTINATION ${CMAKE_BINARY_DIR})
